@@ -1,0 +1,17 @@
+Token: tipo = 7, lexema = '(', linha = 1
+Token: tipo = 1, lexema = '1', linha = 1
+Token: tipo = 3, lexema = '+', linha = 1
+Token: tipo = 1, lexema = '2', linha = 1
+Token: tipo = 8, lexema = ')', linha = 1
+
+Token: tipo = 5, lexema = '*', linha = 1
+Token: tipo = 2, lexema = 'total', linha = 1
+
+Token: tipo = 4, lexema = '-', linha = 2
+Token: tipo = 1, lexema = '4', linha = 2
+Token: tipo = 6, lexema = '/', linha = 2
+Token: tipo = 7, lexema = '(', linha = 2
+Token: tipo = 2, lexema = 'b', linha = 2
+Token: tipo = 4, lexema = '-', linha = 2
+Token: tipo = 2, lexema = 'c', linha = 2
+Token: tipo = 8, lexema = ')', linha = 2

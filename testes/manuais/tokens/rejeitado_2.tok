@@ -1,0 +1,4 @@
+Token: tipo = 7, lexema = '(', linha = 1
+Token: tipo = 2, lexema = 'a', linha = 1
+Token: tipo = 3, lexema = '+', linha = 1
+Token: tipo = 2, lexema = 'b', linha = 1

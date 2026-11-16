@@ -1,0 +1,15 @@
+Token: tipo = 34, lexema = 'int', linha = 1
+Token: tipo = 29, lexema = 'main', linha = 1
+Token: tipo = 23, lexema = '(', linha = 1
+Token: tipo = 24, lexema = ')', linha = 1
+Token: tipo = 25, lexema = '{', linha = 1
+Token: tipo = 34, lexema = 'int', linha = 2
+Token: tipo = 1, lexema = 'x', linha = 2
+Token: tipo = 21, lexema = ';', linha = 2
+Token: tipo = 1, lexema = 'x', linha = 3
+Token: tipo = 20, lexema = '=', linha = 3
+Token: tipo = 23, lexema = '(', linha = 3
+Token: tipo = 3, lexema = '3', linha = 3
+Token: tipo = 6, lexema = '+', linha = 3
+Token: tipo = 21, lexema = ';', linha = 3
+Token: tipo = 26, lexema = '}', linha = 4

@@ -1,0 +1,8 @@
+{
+  "nome": "Micro C",
+  "versao": 2,
+  "ativo": true,
+  "autor": null,
+  "tags": ["compilador", "ll1", "ebnf"],
+  "config": { "debug": false, "nivel": 3, "vazio": {} }
+}

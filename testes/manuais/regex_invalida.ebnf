@@ -1,0 +1,9 @@
+(* Deve ser RECUSADA na geracao: quatro expressoes regulares invalidas *)
+TOKENS
+  A = /(ab/ ;
+  B = /[a-/ ;
+  C = /*a/ ;
+  D = /a)/ ;
+
+RULES
+  s = A | B | C | D ;

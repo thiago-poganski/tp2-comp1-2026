@@ -1,0 +1,5 @@
+(* Erro: simbolo inesperado no lugar de um fator *)
+TOKENS
+  NUM = /[0-9]+/ ;
+RULES
+  s = NUM = NUM ;

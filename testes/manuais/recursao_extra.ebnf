@@ -1,0 +1,10 @@
+(* Erros: x direta; y e z indireta (z via prefixo anulavel { "!" }) ;
+   w NAO e recursiva: o NUM antes de w impede *)
+TOKENS
+  NUM = /[0-9]+/ ;
+RULES
+  s = x y w ;
+  x = x "+" NUM | NUM ;
+  y = z "a" | "b" ;
+  z = { "!" } y "c" ;
+  w = NUM w | NUM ;

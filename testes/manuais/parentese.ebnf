@@ -1,0 +1,5 @@
+(* Erro: parentese nao fechado *)
+TOKENS
+  NUM = /[0-9]+/ ;
+RULES
+  s = ( NUM "+" NUM ;

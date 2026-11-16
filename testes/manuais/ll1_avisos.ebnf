@@ -1,0 +1,12 @@
+(* Deve ser ACEITA, com dois AVISOS de conflito resolvido de forma gulosa:
+     cmd: o else pendente, em [ "else" cmd ]
+     lista: { "," NUM } seguido de "," fora da repeticao *)
+TOKENS
+  NUM = /[0-9]+/ ;
+  ID = /[a-z]+/ ;
+  SKIP = /[ \t\r\n]+/ ;
+
+RULES
+  s     = cmd lista ;
+  cmd   = "if" ID cmd [ "else" cmd ] | ID ";" ;
+  lista = NUM { "," NUM } "," ;

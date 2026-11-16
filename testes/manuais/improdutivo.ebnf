@@ -1,0 +1,8 @@
+(* Erro: a e b so derivam um ao outro (nunca terminam); c e produtivo *)
+TOKENS
+  NUM = /[0-9]+/ ;
+RULES
+  s = a | c ;
+  a = "(" b ")" ;
+  b = NUM a ;
+  c = NUM [ a ] { b } ;

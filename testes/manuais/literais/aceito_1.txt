@@ -1,0 +1,1 @@
+seta=1;printa+(b+-!1);{printa;{}}fim

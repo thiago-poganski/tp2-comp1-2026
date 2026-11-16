@@ -1,0 +1,7 @@
+(* Aviso: sobra e extra nao sao alcancaveis a partir de lista *)
+TOKENS
+  NUM = /[0-9]+/ ;
+RULES
+  lista = NUM { "," NUM } ;
+  sobra = NUM extra ;
+  extra = "x" ;

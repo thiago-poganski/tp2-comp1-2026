@@ -1,0 +1,8 @@
+(* Sequencias vazias: a = ; e alternativa vazia em b *)
+TOKENS
+  NUM = /[0-9]+/ ;
+RULES
+  s = a b c ;
+  a = ;
+  b = NUM | ;
+  c = ( NUM | "x" ) [ "y" ] { "z" NUM } ;

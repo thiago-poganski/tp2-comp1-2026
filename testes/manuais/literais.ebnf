@@ -1,0 +1,12 @@
+(* Gramatica so com literais: funciona antes do Passo 2.6 (sem regex).
+   Exercita sequencia, alternativa (inclusive anulavel), [ ] e { }.
+   As entradas nao podem ter espacos nem quebras de linha, porque o
+   SKIP tambem depende de expressao regular. *)
+RULES
+  prog  = { cmd } "fim" ;
+  cmd   = "set" var "=" val ";" | "print" val ";" | bloco ;
+  bloco = "{" { cmd } "}" ;
+  var   = "a" | "b" ;
+  val   = termo [ "+" val ] ;
+  termo = var | "(" val ")" | "-" termo | sinal "1" ;
+  sinal = "!" | ;

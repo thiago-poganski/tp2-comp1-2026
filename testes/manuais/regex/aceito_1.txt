@@ -1,0 +1,4 @@
+0x1F 3.14 2.5e-3 42 "a\"b" foo_1 <= if iff
+// comentario de linha
+/* bloco
+ ** com asteriscos */ ( > ) 'z' 007

@@ -1,0 +1,6 @@
+(* Erro: falta o ; no fim da regra lista *)
+TOKENS
+  NUM = /[0-9]+/ ;
+RULES
+  inicio = lista
+  lista = NUM { "," NUM } ;

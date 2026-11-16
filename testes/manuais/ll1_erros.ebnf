@@ -1,0 +1,18 @@
+(* Deve ser RECUSADA com um erro LL(1) em cada regra de a ate e:
+     a: repeticao cujo conteudo e anulavel
+     b: opcional cujo conteudo e anulavel
+     c: duas alternativas anulaveis
+     d: alternativas que comecam com o mesmo token (NUM)
+     e: alternativa vazia, e o FOLLOW de e (que contem NUM) cruza o
+        FIRST da outra alternativa *)
+TOKENS
+  NUM = /[0-9]+/ ;
+  SKIP = /[ \t\r\n]+/ ;
+
+RULES
+  s = a b c d e NUM ;
+  a = { [ "," ] } ;
+  b = [ { ";" } ] ;
+  c = [ "x" ] | { "y" } ;
+  d = NUM "+" | NUM "-" ;
+  e = NUM | ;

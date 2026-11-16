@@ -1,0 +1,13 @@
+(* JSON (RFC 8259, simplificado): objetos, listas, strings com escape,
+   numeros com sinal, fracao e expoente, true, false e null. *)
+TOKENS
+  STRING = /"([^"\\\n]|\\.)*"/ ;
+  NUMBER = /-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+\-]?[0-9]+)?/ ;
+  SKIP   = /[ \t\r\n]+/ ;
+
+RULES
+  json   = valor ;
+  valor  = objeto | lista | STRING | NUMBER | "true" | "false" | "null" ;
+  objeto = "{" [ membro { "," membro } ] "}" ;
+  membro = STRING ":" valor ;
+  lista  = "[" [ valor { "," valor } ] "]" ;

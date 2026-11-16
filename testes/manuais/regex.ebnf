@@ -1,0 +1,18 @@
+(* Teste do lexico gerado: classes, faixas, negacao, escapes, |, *, +, ?,
+   grupos, ponto e varios SKIP (espacos, comentario de linha e de bloco).
+   Empates de tamanho: vence o literal; depois, o token declarado primeiro. *)
+TOKENS
+  HEX   = /0[xX][0-9a-fA-F]+/ ;
+  REAL  = /[0-9]+\.[0-9]+([eE][+\-]?[0-9]+)?/ ;
+  NUM   = /[0-9]+/ ;
+  STR   = /"([^"\\\n]|\\.)*"/ ;
+  ID    = /[a-zA-Z_][a-zA-Z0-9_]*/ ;
+  REL   = /<=|>=|==|!=|<|>/ ;
+  CHAR  = /'.'/ ;
+  SKIP  = /[ \t\r\n]+/ ;
+  SKIP  = /\/\/[^\n]*/ ;
+  SKIP  = /\/\*([^*]|\*+[^*\/])*\*+\// ;
+
+RULES
+  prog = { item } ;
+  item = HEX | REAL | NUM | STR | ID | REL | CHAR | "(" | ")" | "if" ;

@@ -1,0 +1,5 @@
+(* Deve ser RECUSADA: NUMERO nao existe no TokenType e "while" nao e token de Micro C *)
+TOKENS EXTERN "../../microc/tokens.h" ;
+
+RULES
+  s = "int" ID "=" NUMERO ";" | "while" ;
